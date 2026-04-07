@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".p2Activity">
+
+    <TextView
+        android:id="@+id/practice1_banner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:background="#00BCD4"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="실습 3번"
+        android:textSize="50sp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/btBTN"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_bt_btn"
+        android:onClick="clickFunc">
+    </Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/p3_send"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:text='SEND TEXT'
+            android:textSize="50sp"
+            android:onClick="clickFunc">
+        </Button>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/p5_speedup"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='ON'
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/p5_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='OFF'
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/p5_speeddown"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='CLEAR'
+            android:textSize="20sp"></Button>
+
+
+    </LinearLayout>
+</LinearLayout>

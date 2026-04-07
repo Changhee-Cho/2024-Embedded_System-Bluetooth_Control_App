@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".p5Activity">
+
+    <TextView
+        android:id="@+id/practice1_banner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:background="#00C3B4"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="실습 5번"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+    <Button
+        android:id="@+id/btBTN"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_bt_btn"
+        android:onClick="clickFunc">
+
+    </Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/p5_speedCheck"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#2F1E1E1E"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="속도 확인"
+            android:textColor="#141414"
+            android:onClick="clickFunc"
+            android:textSize="20sp"></Button>
+        <TextView
+            android:id="@+id/p5_display"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#2F1E1E1E"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/p5_top"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='▲'
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+        <Button
+            android:id="@+id/p5_right"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="48dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='▶'
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.502"></Button>
+
+        <Button
+            android:id="@+id/p5_bottom"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='▼'
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"></Button>
+
+        <Button
+            android:id="@+id/p5_left"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginStart="48dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='◀'
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/p5_speedup"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='가속'
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/p5_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='정지'
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/p5_speeddown"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='감속'
+            android:textSize="20sp"></Button>
+
+    </LinearLayout>
+</LinearLayout>

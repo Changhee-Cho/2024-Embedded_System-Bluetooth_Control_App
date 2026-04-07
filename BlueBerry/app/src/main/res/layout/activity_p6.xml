@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".p6Activity">
+
+    <TextView
+        android:id="@+id/practice1_banner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:background="#FF9800"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="실습 6번"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+    <Button
+        android:id="@+id/btBTN"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector_bt_btn"
+        android:onClick="clickFunc">
+
+    </Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/p6_speedCheck"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#2F1E1E1E"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="clickFunc"
+            android:text="속도"
+            android:textColor="#141414"
+            android:textSize="20sp"></Button>
+
+        <TextView
+            android:id="@+id/p6_display"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#2F1E1E1E"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/p6_speedup"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='가속'
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/p6_top"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085"></Button>
+
+        <Button
+            android:id="@+id/p6_speeddown"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='감속'
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toEndOf="@+id/p6_top"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085"></Button>
+
+        <Button
+            android:id="@+id/p6_stop"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#2F1E1E1E"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="clickFunc"
+            android:text="정지"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/p6_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/p6_right"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toEndOf="@+id/p6_left"
+            app:layout_constraintTop_toBottomOf="@+id/p6_top"
+            app:layout_constraintVertical_bias="0.55"></Button>
+
+        <Button
+            android:id="@+id/p6_top"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='▲'
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+
+        <Button
+            android:id="@+id/p6_right"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="48dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='▶'
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.502"></Button>
+
+        <Button
+            android:id="@+id/p6_bottom"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='▼'
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/p6_top"
+            app:layout_constraintVertical_bias="0.92"></Button>
+
+        <Button
+            android:id="@+id/p6_left"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="20dp"
+            android:layout_marginStart="48dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='◀'
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Button>
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/p6_ultraleft"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='좌측'
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/p6_ultrafront"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='전방'
+            android:textSize="20sp"></Button>
+
+        <Button
+            android:id="@+id/p6_ultraright"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="clickFunc"
+            android:text='우측'
+            android:textSize="20sp"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/p6_showleft"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#2F1E1E1E"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/p6_showfront"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#2F1E1E1E"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/p6_showRight"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#2F1E1E1E"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="#141414"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+</LinearLayout>
